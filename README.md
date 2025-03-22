@@ -1,11 +1,11 @@
-# 🎓 Onur Akay University - Network Design
+# Onur Akay University - Network Design
 
 In this project, an **enterprise level network infrastructure** for the entire campus of **Onur Akay University**, a fictitious university, is designed using **Cisco Packet Tracer**.  
 The goal is to create a real-world structure with a **scalable**, **secure** and **highly available** architecture.
 
 ---
 
-## 🏛️ Campus Distribution
+## Campus Distribution
 
 ### HQ ###
 
@@ -19,32 +19,32 @@ The goal is to create a real-world structure with a **scalable**, **secure** and
 | **North Campus** | Library, Halls, Laboratories |
 | **Branch Campus** | Engineering, Foreign Languages, Faculty of Sports, Applied Sciences |
 
-📌 **Note**: All Access Points are managed by a single WLC (connected to CORE-1) with CAPWAP.
+**Note**: All Access Points are managed by a single WLC (connected to CORE-1) with CAPWAP.
 
 ---
 
-## 🛠️ Network Architecture
+## Network Architecture
 
 The network structure is based on a **3-layer hierarchical model**:
 
-### 🔹 Core Layer
+### Core Layer
 - **CORE-1 and CORE-2** multilayer switches
 - High-speed connectivity (redundant links) to all distribution layers
 - WLC and external links are located at this layer
 
-### 🔹 Distribution Layer
+### Distribution Layer
 - 1 or 2 L3 distribution switches in each campus area
 - Redundant gateway structure with **VLAN routing + HSRP**
 - OSPF works in Area 0
 
-#### 🔹 Access Layer
+#### Access Layer
 - Separate access switches for each building
 - End user connections separated into VLANs
 - Port security active
 
 ---
 
-## 🌐 VLAN Structure
+## VLAN Structure
 
 | VLAN ID | Name | Description |
 |---------|------------------|-------------------------------------|
@@ -67,7 +67,7 @@ The network structure is based on a **3-layer hierarchical model**:
 
 ---
 
-## ⚙️ Technical Specifications and Security
+## Technical Specifications and Security
 
 - **VLAN gateway redundancy with HSRP**
 - **Dynamic routing with OSPF (Area 0)**
