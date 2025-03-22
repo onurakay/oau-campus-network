@@ -3,6 +3,13 @@
 In this project, an **enterprise level network infrastructure** for the entire campus of **Onur Akay University**, a fictitious university, is designed using **Cisco Packet Tracer**.  
 The goal is to create a real-world structure with a **scalable**, **secure** and **highly available** architecture.
 
+![image](https://github.com/user-attachments/assets/7cce7723-8939-4f64-bbed-04646cc703ae)
+
+![image](https://github.com/user-attachments/assets/6978de1c-4e4a-42dc-8770-95194f18b751)
+
+
+
+
 ---
 
 ## Campus Distribution
@@ -29,7 +36,7 @@ The network structure is based on a **3-layer hierarchical model**:
 
 ### Core Layer
 - **CORE-1 and CORE-2** multilayer switches
-- High-speed connectivity (redundant links) to all distribution layers
+- High-speed point-to-point connectivity (redundant links) to all distribution layers
 - WLC and external links are located at this layer
 
 ### Distribution Layer
@@ -72,6 +79,11 @@ The network structure is based on a **3-layer hierarchical model**:
 - **VLAN gateway redundancy with HSRP**
 - **Dynamic routing with OSPF (Area 0)**
 - **DMZ zone**: Mail, DNS, DHCP servers are NATed behind the firewall
+- **Internet**
+  - HQ-FRW and B-FRW are connected to the outside world (Internet) and the Internet is simulated with Google.
+  - With OSPF all routes, including internet routers, are dynamically distributed.
+  - ![image](https://github.com/user-attachments/assets/7bc0b895-9079-4b2d-8834-b9851cb443d3)
+
 - **Firewall (ASA)**:
   - Internal-External NAT configurations
  - Service based traffic control with ACL
@@ -79,6 +91,7 @@ The network structure is based on a **3-layer hierarchical model**:
 - **WLC (on CORE-1)**:
   - VLAN 30 (staff/student) and VLAN 35 (guest) management
  - CAPWAP communication with APs on branch campus
+ - ![image](https://github.com/user-attachments/assets/c8bfc2d3-e390-41f4-8f3b-8f7687730d88)
 - **DHCP server (in DMZ)**:
   - Redundancy supported
  - IP, DNS and default gateway distribution
@@ -90,9 +103,11 @@ The network structure is based on a **3-layer hierarchical model**:
 - **NTP service** is provided via DHCP server
 - **IPSec VPN tunneling** is active between HQ and Branch campus
 
+
 ---
 
 Future plans:
 
+* ISP redundancy
 * Campus dormitories will be added and policies implemented will be determined
 * more detailed acl
