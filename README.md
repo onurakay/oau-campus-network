@@ -91,7 +91,8 @@ The network structure is based on a **3-layer hierarchical model**:
 - **WLC (on CORE-1)**:
   - VLAN 30 (staff/student) and VLAN 35 (guest) management
  - CAPWAP communication with APs on branch campus
- - ![image](https://github.com/user-attachments/assets/c8bfc2d3-e390-41f4-8f3b-8f7687730d88)
+ - ![image](https://github.com/user-attachments/assets/8b5e98b1-705b-466e-ad1c-382928bd5b2b)
+
 - **DHCP server (in DMZ)**:
   - Redundancy supported
  - IP, DNS and default gateway distribution
