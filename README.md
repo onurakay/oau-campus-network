@@ -61,7 +61,8 @@ The network structure is based on a **3-layer hierarchical model**:
 - **Internet**
   - HQ-FRW and B-FRW are connected to the outside world (Internet) and the Internet is simulated with Google.
   - With OSPF all routes, including internet routers, are dynamically distributed.
-  - ![image](https://github.com/user-attachments/assets/7bc0b895-9079-4b2d-8834-b9851cb443d3)
+  ![image](https://github.com/user-attachments/assets/b2fa7813-d963-43c4-a7f2-3741e835fc4c)
+
 
 - **Firewall (ASA)**:
   - Internal-External NAT configurations
