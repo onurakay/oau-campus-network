@@ -3,9 +3,11 @@
 In this project, an **enterprise level network infrastructure** for the entire campus of **Onur Akay University**, a fictitious university, is designed using **Cisco Packet Tracer**.  
 The goal is to create a real-world structure with a **scalable**, **secure** and **highly available** architecture.
 
-![image](https://github.com/user-attachments/assets/7cce7723-8939-4f64-bbed-04646cc703ae)
+![image](https://github.com/user-attachments/assets/fcd68f23-1e67-4436-9643-a0d11487d9c6)
 
-![image](https://github.com/user-attachments/assets/6978de1c-4e4a-42dc-8770-95194f18b751)
+
+![image](https://github.com/user-attachments/assets/8f37d45d-aa26-4a8c-9c07-44b050f283c2)
+
 
 
 
