@@ -8,9 +8,7 @@ The goal is to create a real-world structure with a **scalable**, **secure** and
 
 ![image](https://github.com/user-attachments/assets/8f37d45d-aa26-4a8c-9c07-44b050f283c2)
 
-
-
-
+**Note**: This project focuses on designing a large-scale campus network, so I kept the spotlight on the overall architecture and left out the finer details for now. For something more hands-on and detailed, check out my SOHO (Small Office/Home Office) network project.
 
 ---
 
