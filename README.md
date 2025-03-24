@@ -53,29 +53,6 @@ The network structure is based on a **3-layer hierarchical model**:
 
 ---
 
-## VLAN Structure
-
-| VLAN ID | Name | Description |
-|---------|------------------|-------------------------------------|
-| 10 | IT | IT department |
-| 15 | MANAGEMENT | Network management, SSH, SNMP, NTP |
-| 16 | WLAN_MANAGEMENT | WLC management |
-| 20 | RECTOR | Rectorate office |
-| 30 | WLAN | Wireless network (Staff/Student) |
-| 35 | WLAN_GUEST | Guest Wi- Fi access |
-| 40 | SCIENCE | Faculty of Science |
-| 50 | PHARMACY | Faculty of Pharmacy |
-| 60 | LIBRARY | Library |
-| 70 | LABS | Laboratories |
-| 75 | HALLS | Seminar Halls |
-| 80 | ENGINEERING | Faculty of engineering |
-| 90 | FOREIGNLANGUAGES | Faculty of foreign languages |
-| 95 | SPORTS | Faculty of sports |
-| 100 | APSC | Faculty of applied sciences |
-| 333 | BLACKHOLE | Private VLAN for unused ports |
-
----
-
 ## Technical Specifications and Security
 
 - **VLAN gateway redundancy with HSRP**
@@ -104,7 +81,6 @@ The network structure is based on a **3-layer hierarchical model**:
  - All unused ports are closed by assigning them to VLAN 333
 - **STP security**: `portfast` and `bpduguard` are active
 - **NTP service** is provided via DHCP server
-- **IPSec VPN tunneling** is active between HQ and Branch campus
 
 
 ---
