@@ -3,6 +3,39 @@ en
 conf t
 no ip domain-lookup
 hostname MATH-ACCESS
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -52,6 +85,39 @@ en
 conf t
 no ip domain-lookup
 hostname SCIE-ACCESS
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -96,6 +162,41 @@ en
 conf t
 no ip domain-lookup
 hostname PHAR-ACCESS
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
+
+
 
 vlan 15
 name MANAGEMENT
@@ -141,6 +242,39 @@ en
 conf t
 no ip domain-lookup
 hostname REKTOR-ACCESS
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -183,6 +317,39 @@ en
 conf t
 no ip domain-lookup
 hostname IT-ACCESS
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -232,6 +399,39 @@ en
 conf t
 no ip domain-lookup
 hostname LIBR-ACCESS
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -273,6 +473,39 @@ en
 conf t
 no ip domain-lookup
 hostname LABS-ACCESS
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -314,6 +547,39 @@ en
 conf t
 no ip domain-lookup
 hostname HALLS-ACCESS
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -355,6 +621,39 @@ en
 conf t
 no ip domain-lookup
 hostname ENGI-ACCESS
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -396,6 +695,39 @@ en
 conf t
 no ip domain-lookup
 hostname FORE-ACCESS
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -439,6 +771,39 @@ en
 conf t
 no ip domain-lookup
 hostname SPOR-ACCESS
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -483,6 +848,39 @@ en
 conf t
 no ip domain-lookup
 hostname APSC-ACCESS
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -526,6 +924,39 @@ en
 conf t
 no ip domain-lookup
 hostname DIST-FACULTY1-1
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -617,6 +1048,39 @@ conf t
 no ip domain-lookup
 ip routing
 hostname DIST-ADMIN-1
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -726,6 +1190,39 @@ conf t
 no ip domain-lookup
 ip routing
 hostname DIST-ADMIN-2
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -838,6 +1335,39 @@ conf t
 no ip domain-lookup
 ip routing
 hostname DIST-LIBRARY-1
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -954,6 +1484,39 @@ conf t
 no ip domain-lookup
 ip routing
 hostname DIST-LIBRARY-2
+    banner motd #
+    *****************************************************************
+    *  UYARI: Bu sisteme yalnizca yetkili kullanicilar erisebilir.  *
+    *  Sisteme yapina tum erisimler izlenmekte ve kaydedilmektedir. *
+    *                                                               *
+    *  Yetkisiz erişim 5237 sayili Türk Ceza Kanunu'nun             *
+    *  243 ve 244. maddeleri kapsaminda suç teşkil eder.            *
+    *                                                               *
+    *  Bu sistemde işlenen kişisel veriler, 6698 sayili KVKK        *
+    *  kapsaminda korunmaktadir.                                    *
+    *                                                               *
+    *  Sistemi kullanarak bu şartlari kabul etmiş sayilirsiniz.     *
+    *  Yetkisiz erişim durumunda yasal işlem baslatilir.            *
+    *****************************************************************
+    #
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -1068,6 +1631,39 @@ conf t
 no ip domain-lookup
 ip routing
 hostname HQ-CORE-1
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -1185,6 +1781,40 @@ conf t
 no ip domain-lookup
 ip routing
 hostname HQ-CORE-2
+banner motd #
+************************************************************
+*  UYARI: Bu sisteme yalnızca yetkili kullanıcılar erişebilir. *
+*  Sisteme yapılan tüm erişimler izlenmekte ve kaydedilmektedir. *
+*                                                            *
+*  Yetkisiz erişim 5237 sayılı Türk Ceza Kanunu'nun         *
+*  243 ve 244. maddeleri kapsamında suç teşkil eder.         *
+*                                                            *
+*  Bu sistemde işlenen kişisel veriler, 6698 sayılı KVKK     *
+*  kapsamında korunmaktadır.                                *
+*                                                            *
+*  Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.  *
+*  Yetkisiz erişim durumunda yasal işlem başlatılır.         *
+************************************************************
+#
+
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
+
 
 
 vlan 10
@@ -1292,6 +1922,23 @@ conf t
 no ip domain-lookup
 ip routing
 hostname B-MLSW-1
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -1446,6 +2093,23 @@ conf t
 no ip domain-lookup
 ip routing
 hostname B-MLSW-2
+enable secret admin123
+
+line console 0
+password admin123
+login
+exit
+
+ip domain name oau.edu.tr
+crypto key generate rsa
+username admin password admin123
+2048
+line vty 0 15
+login local
+transport input ssh
+exit
+
+service password-encryption
 
 
 
@@ -1742,6 +2406,8 @@ access-list res-access extended permit udp any any eq 12223
 
 
 exit
+
+
 
 
 ---------------------------- B-FRW ----------------------------
