@@ -62,8 +62,6 @@ The network structure is based on a **3-layer hierarchical model**:
 - The connections between Core-Firewall, ISP and Internet also work with OSPF.
 - Branch1, which represents the branches, has a similar OSPF configuration.
 
----
-
 ### **Security**
 Port Security, BPDU Guard, Blackhole VLAN (vlan333), not using VLAN1 etc. measures and ACLs were used to ensure LAN security and compliance with ISO 27001 Information Security Management System standards.
 
@@ -73,8 +71,6 @@ Port Security, BPDU Guard, Blackhole VLAN (vlan333), not using VLAN1 etc. measur
 - Internal networks (INSIDE1 and INSIDE2) exit to the outside world via NAT.
 - Service based traffic control with ACL
 - CAPWAP, ICMP, DNS, DHCP, HTTP, FTP permissions
-
----
 
 ### **DMZ zone**
 - DHCP, DNS, WEB, MAIL, FTP, NTP, SYSLOG, TFTP servers
