@@ -66,6 +66,15 @@ The network structure is based on a **3-layer hierarchical model**:
 Port Security, BPDU Guard, Blackhole VLAN (vlan333), not using VLAN1 etc. measures and ACLs were used to ensure LAN security and compliance with ISO 27001 Information Security Management System standards.
 
 
+---
+
+#### Firewall (ASA) 
+- Internal-External NAT configurations
+- Service based traffic control with ACL
+- ICMP, DNS, DHCP, HTTP, FTP permissions
+
+
+
 
 
 
@@ -77,10 +86,7 @@ Port Security, BPDU Guard, Blackhole VLAN (vlan333), not using VLAN1 etc. measur
   ![image](https://github.com/user-attachments/assets/b2fa7813-d963-43c4-a7f2-3741e835fc4c)
 
 
-- **Firewall (ASA)**:
-  - Internal-External NAT configurations
- - Service based traffic control with ACL
- - ICMP, DNS, DHCP, HTTP, FTP permissions
+
 - **WLC (on CORE-1)**:
   - VLAN 30 (staff/student) and VLAN 35 (guest) management
  - CAPWAP communication with APs on branch campus
