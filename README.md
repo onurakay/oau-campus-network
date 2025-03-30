@@ -75,7 +75,7 @@ Port Security, BPDU Guard, Blackhole VLAN (vlan333), not using VLAN1 etc. measur
 
 
 
-
+####DERLE
 
 
 - **VLAN gateway redundancy with HSRP**
