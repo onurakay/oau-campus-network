@@ -62,6 +62,9 @@ The network structure is based on a **3-layer hierarchical model**:
 - The connections between Core-Firewall, ISP and Internet also work with OSPF.
 - Branch1, which represents the branches, has a similar OSPF configuration.
 
+### VLAN Gateway Redundancy
+HSRP has been configured to ensure high availability between Core and Collapsed Core devices.
+
 ### **Security**
 Port Security, BPDU Guard, Blackhole VLAN (vlan333), not using VLAN1 etc. measures and ACLs were used to ensure LAN security and compliance with ISO 27001 Information Security Management System standards.
 
@@ -73,7 +76,7 @@ Port Security, BPDU Guard, Blackhole VLAN (vlan333), not using VLAN1 etc. measur
 - CAPWAP, ICMP, DNS, DHCP, HTTP, FTP permissions
 
 ### **DMZ zone**
-- DHCP, DNS, WEB, MAIL, FTP, NTP, SYSLOG, TFTP servers
+- DHCP (with redundancy), DNS, WEB, MAIL, FTP, NTP, SYSLOG, TFTP servers
 - These servers are NATed behind the firewall
 
 _görsel ekle_
@@ -83,7 +86,6 @@ _görsel ekle_
 ####DERLE
 
 
-- **VLAN gateway redundancy with HSRP**
 - 
 - **Internet**
   - HQ-FRW and B-FRW are connected to the outside world (Internet) and the Internet is simulated with Google.
