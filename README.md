@@ -75,30 +75,30 @@ Port Security, BPDU Guard, Blackhole VLAN (vlan333), not using VLAN1 etc. measur
 - Service based traffic control with ACL
 - CAPWAP, ICMP, DNS, DHCP, HTTP, FTP permissions
 
+### **WLAN**
+- WLC (on CORE-1)
+- CAPWAP communication with APs on branch campus
+-  ![image](https://github.com/user-attachments/assets/8b5e98b1-705b-466e-ad1c-382928bd5b2b)
+> **Note**: Due to limitations in Packet Tracer regarding wireless distance calculations, all wireless devices have been **disabled in the overview screenshot**. Devices were connecting to random APs.
+
 ### **DMZ zone**
 - DHCP (with redundancy), DNS, WEB, MAIL, FTP, NTP, SYSLOG, TFTP servers
 - These servers are NATed behind the firewall
 
 _görsel ekle_
 
-
-
-####DERLE
-
-
-- 
-- **Internet**
+### **Internet**
   - HQ-FRW and B-FRW are connected to the outside world (Internet) and the Internet is simulated with Google.
   - With OSPF all routes, including internet routers, are dynamically distributed.
-  ![image](https://github.com/user-attachments/assets/b2fa7813-d963-43c4-a7f2-3741e835fc4c)
+**Note**: Due to limitations in Packet Tracer regarding wireless distance calculations, all wireless connecting to random APs. Here is how they work properly:
+> ![image](https://github.com/user-attachments/assets/b2fa7813-d963-43c4-a7f2-3741e835fc4c)
 
-
+####DERLE
 
 - **WLC (on CORE-1)**:
   - VLAN 30 (staff/student) and VLAN 35 (guest) management
  - CAPWAP communication with APs on branch campus
- ![image](https://github.com/user-attachments/assets/8b5e98b1-705b-466e-ad1c-382928bd5b2b)
-> **Note**: Due to limitations in Packet Tracer regarding wireless distance calculations, all wireless devices have been **disabled in the overview screenshot**. Devices were connecting to random APs.
+
 
 - **DHCP server (in DMZ)**:
   - Redundancy supported
