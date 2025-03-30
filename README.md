@@ -78,8 +78,8 @@ Port Security, BPDU Guard, Blackhole VLAN (vlan333), not using VLAN1 etc. measur
 ### **WLAN**
 - WLC (on CORE-1)
 - CAPWAP communication with APs on branch campus
--  ![image](https://github.com/user-attachments/assets/8b5e98b1-705b-466e-ad1c-382928bd5b2b)
-> **Note**: Due to limitations in Packet Tracer regarding wireless distance calculations, all wireless devices have been **disabled in the overview screenshot**. Devices were connecting to random APs.
+**Note**: Due to limitations in Packet Tracer regarding wireless distance calculations and connecting to random APs, all wireless devices have been **disabled in the overview screenshot**. Devices were connecting to random APs. Here is how they work properly:
+> ![image](https://github.com/user-attachments/assets/8b5e98b1-705b-466e-ad1c-382928bd5b2b)
 
 ### **DMZ zone**
 - DHCP (with redundancy), DNS, WEB, MAIL, FTP, NTP, SYSLOG, TFTP servers
