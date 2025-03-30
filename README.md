@@ -48,7 +48,7 @@ The network structure is based on a **3-layer hierarchical model**:
 - Redundant gateway structure with **VLAN routing + HSRP**
 - OSPF works in Area 0
 
-#### Access Layer
+### Access Layer
 - Separate access switches for each building
 - End user connections separated into VLANs
 - Port security active
@@ -57,21 +57,30 @@ The network structure is based on a **3-layer hierarchical model**:
 
 ## Features
 
-#### Dynamic routing with OSPF
-
+### Dynamic routing
+- OSPF was used between Core and Distribution devices in HQ. Point-to-point structure (/30) was preferred to limit broadcast domains.
+- The connections between Core-Firewall, ISP and Internet also work with OSPF.
+- Branch1, which represents the branches, has a similar OSPF configuration.
 
 ---
 
-#### Security
+### **Security**
 Port Security, BPDU Guard, Blackhole VLAN (vlan333), not using VLAN1 etc. measures and ACLs were used to ensure LAN security and compliance with ISO 27001 Information Security Management System standards.
 
+**Firewall (ASA)**
+- Internal (INSIDE), external (OUTSIDE) and DMZ zones were defined
+- Traffic from DMZ and OUTSIDE was given access only on certain service ports (HTTP, DNS, FTP, etc.)
+- Internal networks (INSIDE1 and INSIDE2) exit to the outside world via NAT.
+- Service based traffic control with ACL
+- CAPWAP, ICMP, DNS, DHCP, HTTP, FTP permissions
 
 ---
 
-#### Firewall (ASA) 
-- Internal-External NAT configurations
-- Service based traffic control with ACL
-- ICMP, DNS, DHCP, HTTP, FTP permissions
+### **DMZ zone**
+- DHCP, DNS, WEB, MAIL, FTP, NTP, SYSLOG, TFTP servers
+- These servers are NATed behind the firewall
+
+_görsel ekle_
 
 
 
@@ -79,7 +88,7 @@ Port Security, BPDU Guard, Blackhole VLAN (vlan333), not using VLAN1 etc. measur
 
 
 - **VLAN gateway redundancy with HSRP**
-- **DMZ zone**: Mail, DNS, DHCP servers are NATed behind the firewall
+- 
 - **Internet**
   - HQ-FRW and B-FRW are connected to the outside world (Internet) and the Internet is simulated with Google.
   - With OSPF all routes, including internet routers, are dynamically distributed.
