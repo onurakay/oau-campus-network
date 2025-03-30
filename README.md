@@ -22,7 +22,7 @@ Check out my other network projects:
 
 ### BRANCH ###
 
-| Location | Description |
+| Location | Segments |
 |---------------|-----------------------------------|
 | **Administrative Building** | Rectorate, IT Building |
 | **West Campus** | Faculty of Science | 
@@ -55,10 +55,21 @@ The network structure is based on a **3-layer hierarchical model**:
 
 ---
 
-## Technical Specifications and Security
+## Features
+
+#### Dynamic routing with OSPF
+
+
+---
+
+#### Security
+Port Security, BPDU Guard, Blackhole VLAN (vlan333), not using VLAN1 etc. measures and ACLs were used to ensure LAN security and compliance with ISO 27001 Information Security Management System standards.
+
+
+
+
 
 - **VLAN gateway redundancy with HSRP**
-- **Dynamic routing with OSPF (Area 0)**
 - **DMZ zone**: Mail, DNS, DHCP servers are NATed behind the firewall
 - **Internet**
   - HQ-FRW and B-FRW are connected to the outside world (Internet) and the Internet is simulated with Google.
