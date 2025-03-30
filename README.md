@@ -1,14 +1,18 @@
-# Onur Akay University - Network Design
+# Onur Akay University - Campus Network Design
 
 In this project, an **enterprise level network infrastructure** for the entire campus of **Onur Akay University**, a fictitious university, is designed using **Cisco Packet Tracer**.  
 The goal is to create a real-world structure with a **scalable**, **secure** and **highly available** architecture.
 
+Check out my other network projects:
+- [NexusWave AI Labs, OAU Teknokent - SoHo Network Design](https://github.com/onurakay/soho-nexuswaveai)
+
+## Network Overview
 ![image](https://github.com/user-attachments/assets/fcd68f23-1e67-4436-9643-a0d11487d9c6)
-
-
 ![image](https://github.com/user-attachments/assets/8f37d45d-aa26-4a8c-9c07-44b050f283c2)
+![image](https://github.com/user-attachments/assets/3c5cc43a-5cb6-4854-92f8-beac1696750f)
 
-**Note**: This project focuses on designing a large-scale campus network, so I kept the spotlight on the overall architecture and left out the finer details for now. For something more hands-on and detailed, check out my SOHO (Small Office/Home Office) network project.
+
+**Note**: This project focuses on designing a large-scale campus network, so I kept the spotlight on the overall architecture and left out the finer details for now. For something more hands-on and detailed, check out my [NexusWave AI Labs, OAU Teknokent - SoHo Network Design](https://github.com/onurakay/soho-nexuswaveai) network project.
 
 ---
 
