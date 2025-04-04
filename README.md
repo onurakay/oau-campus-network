@@ -111,12 +111,29 @@ With the ACL applied to HQ-FRW and B-FRW devices, CAPWAP traffic (UDP ports 5246
 > ![image](https://github.com/user-attachments/assets/28841334-f631-41b5-9612-95dd9bca2d70)
 
 Wi-Fi infrastructure configured via web interface via Cisco WLC 2504 and integrated into VLANs with separate SSIDs. (Devices in Branch1 are also available)
->![image](https://github.com/user-attachments/assets/56b295eb-e460-4ed8-88f8-1bf2694833b7)
-
+>![image](https://github.com/user-attachments/assets/04ceb588-3d7e-45d6-a71d-2d2ce1cc6958)
 
 ### **DMZ zone**
 - DHCP (with redundancy), DNS, WEB, MAIL, FTP, NTP, SYSLOG, TFTP servers
 - These servers are NATed behind the firewall
+
+### Servers
+WEB, DHCP, NTP, SYSLOG, TFTP servers in Server VLAN
+
+**WEB**
+> ![image](https://github.com/user-attachments/assets/9f137589-4b41-41fc-ab5c-d3123e884xdc)
+
+**DHCP**
+> ![image](https://github.com/user-attachments/assets/dc7445b6-ac67-4dab-9a1e-1b792a6ed457)
+
+**NTP**
+> ![image](https://github.com/user-attachments/assets/b8b68548-1f73-4fb9-89c9-35dd755e35f9)
+
+**SYSLOG**
+> ![image](https://github.com/user-attachments/assets/1376fb52-4417-4ae3-8874-96653c8fd82e)
+
+**TFTP**
+> ![image](https://github.com/user-attachments/assets/b5e2b1ac-3f56-441c-90f8-1070fbb25d75)
 
 ### **Internet**
   - HQ-FRW and B-FRW are connected to the outside world (Internet) and the Internet is simulated with Google.
@@ -124,11 +141,6 @@ Wi-Fi infrastructure configured via web interface via Cisco WLC 2504 and integra
 > ![image](https://github.com/user-attachments/assets/b2fa7813-d963-43c4-a7f2-3741e835fc4c)
 
 ####DERLE
-
-- **WLC (on CORE-1)**:
-  - VLAN 30 (staff/student) and VLAN 35 (guest) management
- - CAPWAP communication with APs on branch campus
-
 
 - **DHCP server (in DMZ)**:
   - Redundancy supported
