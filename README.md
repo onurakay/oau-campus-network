@@ -89,7 +89,7 @@ HSRP has been configured to ensure high availability between Core and Collapsed 
 ---
 
 ### **Security**
-Port Security, BPDU Guard, Blackhole VLAN (vlan333), sticky MAC where necessary, not using VLAN1 etc. measures and ACLs were used to ensure LAN security and compliance with ISO 27001 Information Security Management System standards.
+Port Security, BPDU Guard, Blackhole VLAN (vlan333), sticky MAC where necessary, SSH management over vlan15, not using VLAN1 etc. measures and ACLs were used to ensure LAN security and compliance with ISO 27001 Information Security Management System standards.
 
 **Firewall (ASA)**
 - Internal (INSIDE), external (OUTSIDE) and DMZ zones were defined
@@ -113,9 +113,13 @@ With the ACL applied to HQ-FRW and B-FRW devices, CAPWAP traffic (UDP ports 5246
 Wi-Fi infrastructure configured via web interface via Cisco WLC 2504 and integrated into VLANs with separate SSIDs. (Devices in Branch1 are also available)
 >![image](https://github.com/user-attachments/assets/04ceb588-3d7e-45d6-a71d-2d2ce1cc6958)
 
+---
+
 ### **DMZ zone**
 - DHCP (with redundancy), DNS, WEB, MAIL, FTP, NTP, SYSLOG, TFTP servers
 - These servers are NATed behind the firewall
+
+---
 
 ### Servers
 WEB, DHCP, NTP, SYSLOG, TFTP servers in Server VLAN
@@ -135,26 +139,18 @@ WEB, DHCP, NTP, SYSLOG, TFTP servers in Server VLAN
 **TFTP**
 > ![image](https://github.com/user-attachments/assets/b5e2b1ac-3f56-441c-90f8-1070fbb25d75)
 
+---
+
 ### **Internet**
   - HQ-FRW and B-FRW are connected to the outside world (Internet) and the Internet is simulated with Google.
   - With OSPF all routes, including internet routers, are dynamically distributed.
 > ![image](https://github.com/user-attachments/assets/b2fa7813-d963-43c4-a7f2-3741e835fc4c)
 
-####DERLE
-
-- **DHCP server (in DMZ)**:
-  - Redundancy supported
- - IP, DNS and default gateway distribution
-- **SSH management** provided only over VLAN 15
-- **ACL** with external access restrictions to the management VLAN
-- **Port security**: Security measures such as Sticky MAC, closing all unused ports by assigning them to VLAN 333
- - All unused ports are closed by assigning them to VLAN 333
-- **STP security**: `portfast` and `bpduguard` are active
-- **NTP service** is provided via DHCP server
-
 ---
 
-## Campus VLAN Topology Overview
+## Network Subnetting Overview
+
+### VLAN Table
 
 | Department/Building       | MGT VLAN (15)           | LAN VLAN (ID & Subnet)                | WLAN VLAN (30) Subnet      | Guest WLAN VLAN (35) Subnet  |
 |---------------------------|--------------------------|----------------------------------------|-----------------------------|-------------------------------|
@@ -196,15 +192,8 @@ WEB, DHCP, NTP, SYSLOG, TFTP servers in Server VLAN
 | B-FRW             | Gi1/3       | BRANCH-ISP    | Gi0/0       | 192.0.2.5/30     |
 | BRANCH-ISP        | S0/3/0      | INTERNET      | S0/3/1      | 203.0.113.2/30   |
 
-
-### DMZ Server Farm
-- **Subnet**: `10.20.20.0/27`  
-- **Usage**: Hosting services like Mail, DNS, DHCP, etc., behind the firewall with NAT.
-
-
-
 Future plans:
 
 * ISP redundancy
-* Campus dormitories will be added and policies implemented will be determined
-* more detailed acl
+* Campus dormitories will be added and policies implemented will be determined (to apply appropriate policies to a variety of different situations)
+* detailed acl
