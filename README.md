@@ -55,11 +55,6 @@ The network structure is based on a **3-layer hierarchical model** on the Main C
 ---
 
 ## Network Architecture (Branch1)
-Sure! Based on your configurations and using the same documentation style, here's the **Branch1** network architecture entry:
-
----
-
-## Network Architecture (Branch1)
 
 The Branch1 campus follows a **collapsed core topology**, with both core and distribution functionalities integrated into two multilayer switches:
 
@@ -72,7 +67,7 @@ The Branch1 campus follows a **collapsed core topology**, with both core and dis
 ### Access Layer
 - End-user connectivity is handled by access interfaces on **B-MLSW-1** and **B-MLSW-2**
 - VLAN segmentation per department
-- 
+
 ---
 
 ## Features
@@ -81,6 +76,9 @@ The Branch1 campus follows a **collapsed core topology**, with both core and dis
 - OSPF was used between Core and Distribution devices in HQ. Point-to-point structure (/30) was preferred to limit broadcast domains.
 - The connections between Core-Firewall, ISP and Internet also work with OSPF.
 - Branch1, which represents the branches, has a similar OSPF configuration.
+
+**OSPF neighbor and route information on the HQ firewall**: Confirming its participation in Area 0 and successful adjacency with internal core routers
+> ![image](https://github.com/user-attachments/assets/4c9a29dd-46dc-4b1b-9ec0-1db41d66f1d5)
 
 ### VLAN Gateway Redundancy
 HSRP has been configured to ensure high availability between Core and Collapsed Core devices.
