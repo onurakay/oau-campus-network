@@ -91,8 +91,6 @@ HSRP has been configured to ensure high availability between Core and Collapsed 
 ### **Security**
 Port Security, BPDU Guard, Blackhole VLAN (vlan333), sticky MAC where necessary, not using VLAN1 etc. measures and ACLs were used to ensure LAN security and compliance with ISO 27001 Information Security Management System standards.
 
----
-
 **Firewall (ASA)**
 - Internal (INSIDE), external (OUTSIDE) and DMZ zones were defined
 - Traffic from DMZ and OUTSIDE was given access only on certain service ports (HTTP, DNS, FTP, etc.)
@@ -100,12 +98,21 @@ Port Security, BPDU Guard, Blackhole VLAN (vlan333), sticky MAC where necessary,
 - Service based traffic control with ACL
 - CAPWAP, ICMP, DNS, DHCP, HTTP, FTP permissions
 
+---
+
 ### **WLAN**
 - WLC (on CORE-1)
 - CAPWAP communication with APs on branch campus.
 
 **Note**: Due to limitations in Packet Tracer regarding wireless distance calculations and connecting to random APs, all wireless devices have been **disabled in the overview screenshot**. Devices were connecting to random APs. Here is how they work properly:
 > ![image](https://github.com/user-attachments/assets/8b5e98b1-705b-466e-ad1c-382928bd5b2b)
+
+With the ACL applied to HQ-FRW and B-FRW devices, CAPWAP traffic (UDP ports 5246 and 5247) and other required UDP services are allowed over the WAN. This configuration enables wireless access points in Branch1 to successfully reach and register with the WLC located in HQ, enabling centralized wireless management and seamless connectivity across the enterprise network.
+> ![image](https://github.com/user-attachments/assets/28841334-f631-41b5-9612-95dd9bca2d70)
+
+Wi-Fi infrastructure configured via web interface via Cisco WLC 2504 and integrated into VLANs with separate SSIDs. (Devices in Branch1 are also available)
+>![image](https://github.com/user-attachments/assets/56b295eb-e460-4ed8-88f8-1bf2694833b7)
+
 
 ### **DMZ zone**
 - DHCP (with redundancy), DNS, WEB, MAIL, FTP, NTP, SYSLOG, TFTP servers
