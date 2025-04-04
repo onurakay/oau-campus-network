@@ -34,9 +34,9 @@ Check out my other network projects:
 
 ---
 
-## Network Architecture
+## Network Architecture (HQ)
 
-The network structure is based on a **3-layer hierarchical model**:
+The network structure is based on a **3-layer hierarchical model** on the Main Campus:
 
 ### Core Layer
 - **CORE-1 and CORE-2** multilayer switches
@@ -51,8 +51,28 @@ The network structure is based on a **3-layer hierarchical model**:
 ### Access Layer
 - Separate access switches for each building
 - End user connections separated into VLANs
-- Port security active
 
+---
+
+## Network Architecture (Branch1)
+Sure! Based on your configurations and using the same documentation style, here's the **Branch1** network architecture entry:
+
+---
+
+## Network Architecture (Branch1)
+
+The Branch1 campus follows a **collapsed core topology**, with both core and distribution functionalities integrated into two multilayer switches:
+
+### Collapsed Core Layer
+- **B-MLSW-1 and B-MLSW-2** multilayer switches serve as both core and distribution switches
+- VLAN routing is handled locally with **HSRP** for high availability
+- OSPF runs in **Area 0**, consistent with HQ
+- Direct point-to-point L3 connection to the **Branch Firewall** for external access
+
+### Access Layer
+- End-user connectivity is handled by access interfaces on **B-MLSW-1** and **B-MLSW-2**
+- VLAN segmentation per department
+- 
 ---
 
 ## Features
