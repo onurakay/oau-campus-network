@@ -754,7 +754,7 @@ shutdown
 int fa 0/21
 no shutdown
 switchport mode access
-switchport access vlan 15
+switchport access vlan 30
 
 
 
@@ -2404,6 +2404,12 @@ access-list res-access extended permit udp any any eq 5247
 access-list res-access extended permit udp any any eq 12222
 access-list res-access extended permit udp any any eq 12223
 
+access-group res-access in interface OUTSIDE
+access-group res-access in interface INSIDE1
+access-group res-access in interface INSIDE2
+exit
+
+
 
 exit
 
@@ -2520,7 +2526,10 @@ access-list res-access extended permit udp any any eq 5246
 access-list res-access extended permit udp any any eq 5247
 access-list res-access extended permit udp any any eq 12222
 access-list res-access extended permit udp any any eq 12223
-
+access-group res-access in interface OUTSIDE
+access-group res-access in interface INSIDE1
+access-group res-access in interface INSIDE2
+exit
 
 exit
 
