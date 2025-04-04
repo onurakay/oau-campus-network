@@ -118,12 +118,9 @@ Wi-Fi infrastructure configured via web interface via Cisco WLC 2504 and integra
 - DHCP (with redundancy), DNS, WEB, MAIL, FTP, NTP, SYSLOG, TFTP servers
 - These servers are NATed behind the firewall
 
-_görsel ekle_
-
 ### **Internet**
   - HQ-FRW and B-FRW are connected to the outside world (Internet) and the Internet is simulated with Google.
   - With OSPF all routes, including internet routers, are dynamically distributed.
-**Note**: Due to limitations in Packet Tracer regarding wireless distance calculations, all wireless connecting to random APs. Here is how they work properly:
 > ![image](https://github.com/user-attachments/assets/b2fa7813-d963-43c4-a7f2-3741e835fc4c)
 
 ####DERLE
