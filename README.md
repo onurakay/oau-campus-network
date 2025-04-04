@@ -14,26 +14,6 @@ Check out my other network projects:
 
 **Note**: This project focuses on designing a large-scale campus network, so I kept the spotlight on the overall architecture and left out the finer details for now. For something more hands-on and detailed, check out my [NexusWave AI Labs, OAU Teknokent - SoHo Network Design](https://github.com/onurakay/soho-nexuswaveai) network project.
 
----
-
-## Campus Distribution
-
-### HQ ###
-
-### BRANCH ###
-
-| Location | Segments |
-|---------------|-----------------------------------|
-| **Administrative Building** | Rectorate, IT Building |
-| **West Campus** | Faculty of Science | 
-| **East Campus** | Faculty of Pharmacy |
-| **North Campus** | Library, Halls, Laboratories |
-| **Branch Campus** | Engineering, Foreign Languages, Faculty of Sports, Applied Sciences |
-
-**Note**: All Access Points are managed by a single WLC (connected to CORE-1) with CAPWAP.
-
----
-
 ## Network Architecture (HQ)
 
 The network structure is based on a **3-layer hierarchical model** on the Main Campus:
