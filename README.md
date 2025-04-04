@@ -77,14 +77,21 @@ The Branch1 campus follows a **collapsed core topology**, with both core and dis
 - The connections between Core-Firewall, ISP and Internet also work with OSPF.
 - Branch1, which represents the branches, has a similar OSPF configuration.
 
-**OSPF neighbor and route information on the HQ firewall**: Confirming its participation in Area 0 and successful adjacency with internal core routers
+**OSPF neighbor and route information on the HQ firewall** confirming its active role in Area 0, with established adjacencies to internal core routers and learned routes from Branch1 LANs, verifying full OSPF connectivity across sites.
 > ![image](https://github.com/user-attachments/assets/4c9a29dd-46dc-4b1b-9ec0-1db41d66f1d5)
+
+---
 
 ### VLAN Gateway Redundancy
 HSRP has been configured to ensure high availability between Core and Collapsed Core devices.
+> ![image](https://github.com/user-attachments/assets/0ebe3744-53d3-4da2-985b-ed75054d04a7)
+
+---
 
 ### **Security**
-Port Security, BPDU Guard, Blackhole VLAN (vlan333), not using VLAN1 etc. measures and ACLs were used to ensure LAN security and compliance with ISO 27001 Information Security Management System standards.
+Port Security, BPDU Guard, Blackhole VLAN (vlan333), sticky MAC where necessary, not using VLAN1 etc. measures and ACLs were used to ensure LAN security and compliance with ISO 27001 Information Security Management System standards.
+
+---
 
 **Firewall (ASA)**
 - Internal (INSIDE), external (OUTSIDE) and DMZ zones were defined
